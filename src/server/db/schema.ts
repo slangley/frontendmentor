@@ -1,11 +1,12 @@
 // Example model schema from the Drizzle docs
 // https://orm.drizzle.team/docs/sql-schema-declaration
 
-import { sql } from "drizzle-orm";
+import { InferModel, sql } from "drizzle-orm";
 import {
   index,
   pgTableCreator,
   serial,
+  text,
   timestamp,
   varchar,
 } from "drizzle-orm/pg-core";
@@ -22,7 +23,14 @@ export const posts = createTable(
   "post",
   {
     id: serial("id").primaryKey(),
-    name: varchar("name", { length: 256 }),
+    headline: varchar("headline", { length: 256 }),
+    category: varchar("category", { length: 256 }),
+    author: varchar("author", { length: 256 }),
+    publishedAt: timestamp("published_at", { withTimezone: true }),
+    content: text("content"),
+    imageUrl: text("image_url"),
+    tags: text("tags").array(),
+
     createdAt: timestamp("created_at", { withTimezone: true })
       .default(sql`CURRENT_TIMESTAMP`)
       .notNull(),
@@ -31,6 +39,10 @@ export const posts = createTable(
     ),
   },
   (example) => ({
-    nameIndex: index("name_idx").on(example.name),
+    headlineIndex: index("headline_idx").on(example.headline),
   })
 );
+
+
+export type Post = typeof posts.$inferSelect;
+

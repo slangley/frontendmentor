@@ -1,0 +1,1 @@
+ALTER TABLE "t3gallery_post" ADD COLUMN "published_at" timestamp with time zone;
