@@ -9,6 +9,7 @@ const f = Figtree({ subsets: ['latin'] })
 export default function BlogPreview() {
     return (
         <main>
+            <h1 className="sr-only">Blog Preview</h1>
             <div className={`${f.className} min-h-screen flex items-center justify-center  bg-yellow-400 text-gray-950 text-base`}>
                 <Card className="max-w-md outline outline-2 outline-black shadow-[10px_10px_0px_0px_rgba(0,0,0)]">
                     <CardHeader>
