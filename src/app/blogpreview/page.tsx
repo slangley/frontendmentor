@@ -14,7 +14,7 @@ export default function BlogPreview() {
                 <Card className="max-w-md outline outline-2 outline-black shadow-[10px_10px_0px_0px_rgba(0,0,0)]">
                     <CardHeader>
                         <Image className="rounded-xl w-full h-auto" src="/assets/images/blogpreview/illustration-article.svg"
-                            alt="Blog Preview" width={336} height={201} />
+                            alt="Blog Preview" width={0} height={0} />
 
                     </CardHeader>
                     <CardContent className="flex flex-col justify-normal gap-2">
