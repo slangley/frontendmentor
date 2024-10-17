@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
 import { db } from '.';
-import { promises as fs } from 'fs';
 import { posts } from './schema';
 
 import seedData from './seed.json';

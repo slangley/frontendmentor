@@ -1,11 +1,10 @@
 "use client"
 
 import { useState, useEffect, useRef } from 'react'
-import Image from 'next/image'
 
 interface ImageComparisonSliderProps {
-    first: any;
-    second: any;
+    first: React.ReactNode;
+    second: React.ReactNode;
 }
 
 export function ImageComparisonSlider({ first, second }: ImageComparisonSliderProps) {

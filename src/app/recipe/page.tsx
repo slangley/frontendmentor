@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "~/components/ui/card"
 import Image from 'next/image';
-import { Table, TableRow, TableHead, TableBody, TableCell } from "~/components/ui/table";
+import { Table, TableRow, TableBody, TableCell } from "~/components/ui/table";
 
 import localFont from 'next/font/local'
 
