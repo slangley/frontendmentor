@@ -9,7 +9,7 @@ const montserrat = Montserrat({ subsets: ['latin'] });
 
 export default function ProductDetails() {
     return (
-        <div className={`${montserrat.className}  sm:flex items-center justify-center p-6 bg-yellow-400 min-h-screen `}>
+        <div className={`${montserrat.className}  sm:flex items-center justify-center p-6 bg-[hsl(30,30%,92%)] min-h-screen `}>
 
 
             <div className="bg-white  sm: m-auto sm:rounded-tl-xl sm:rounded-bl-xl  rounded-bl-none rounded-tl-xl  rounded-tr-xl sm:rounded-tr-none flex flex-col flex-0 sm:flex-row   sm:max-w-xl items-center object-center">
