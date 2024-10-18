@@ -1,6 +1,6 @@
 import { Table } from "~/components/ui/table";
 import Link from "next/link";
-import { TableBody, TableCell, TableHead, TableHeader, TableRow } from "~/components/ui/table";
+import { TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "~/components/ui/table";
 import { db } from "~/server/db";
 
 export default async function HomePage() {
