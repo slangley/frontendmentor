@@ -1,6 +1,6 @@
 import { Table } from "~/components/ui/table";
 import Link from "next/link";
-import { TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "~/components/ui/table";
+import { TableBody, TableCell, TableHead, TableHeader, TableRow } from "~/components/ui/table";
 import { db } from "~/server/db";
 
 export default async function HomePage() {
@@ -9,7 +9,7 @@ export default async function HomePage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center">
       <Table>
-        <TableHeader>       
+        <TableHeader>
           <TableRow>
             <TableHead>Status</TableHead>
           </TableRow>
