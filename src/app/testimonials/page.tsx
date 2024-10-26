@@ -1,7 +1,5 @@
 import { Barlow_Semi_Condensed } from "next/font/google"
 import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
-import Image from "next/image";
-
 
 const font = Barlow_Semi_Condensed({ subsets: ['latin'], weight: ["500", "600"] });
 
