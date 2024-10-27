@@ -4,7 +4,7 @@ import { type Metadata } from "next";
 export const metadata: Metadata = {
   title: "Frontend Mentor",
   description: "Kata from Frontend Mentor",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "/favicon-32x32.png" }],
 };
 
 export default function RootLayout({
